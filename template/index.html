@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <style>
+    @font-face {
+      font-family: 'Abolition';
+      src: url('fonts/AbolitionTest-Regular.otf') format('opentype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Abolition', sans-serif;
+      background-color: #ffffff;
+      color: #111;
+    }
+    header {
+      background-color: #000;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    header h1 {
+      color: #FFD700;
+      font-size: 1.5rem;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-size: 1rem;
+    }
+    nav a:hover {
+      color: #FFD700;
+    }
+    .container {
+      display: flex;
+      min-height: 100vh;
+    }
+    .sidebar {
+      width: 280px;
+      background-color: #000;
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    .sidebar img {
+      border-radius: 50%;
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+    }
+    .sidebar h2 {
+      margin: 1rem 0 0.5rem;
+      color: #FFD700;
+    }
+    .sidebar p {
+      font-size: 0.95rem;
+      margin-bottom: 1.5rem;
+    }
+    .sidebar a {
+      display: block;
+      margin: 0.3rem 0;
+      color: #FFD700;
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+    .sidebar a:hover {
+      text-decoration: underline;
+    }
+    .main {
+      flex: 1;
+      padding: 2rem;
+    }
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+      .sidebar {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Your Name</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#cv">CV</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contacts">Contacts</a>
+    </nav>
+  </header>
+  <div class="container">
+    <aside class="sidebar">
+      <img src="126516dc-5b24-4f78-96c6-9830f1325b80.png" alt="Your photo" />
+      <h2>Your Name</h2>
+      <p>Data Scientist & Developer passionate about AI, data storytelling, and impactful projects.</p>
+      <a href="#">LinkedIn</a>
+      <a href="#">GitHub</a>
+      <a href="#">Twitter</a>
+    </aside>
+    <main class="main">
+      <section id="home">
+        <h2>Welcome to My Portfolio</h2>
+        <p>This is a personal landing page that showcases my work, CV, and ways to connect with me.</p>
+      </section>
+      <section id="cv">
+        <h2>CV / Resume</h2>
+        <p>Download my CV or explore my experience, skills, and education here.</p>
+      </section>
+      <section id="portfolio">
+        <h2>Portfolio</h2>
+        <p>Projects coming soon...</p>
+      </section>
+      <section id="contacts">
+        <h2>Contact</h2>
+        <p>Email: rain2000z@icloud.com</p>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
